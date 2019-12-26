@@ -48,8 +48,8 @@ function flipCard() {
 
 function createBoard() {
 	for (let i = 0; i < cards.length; i++) {
-    	let cardElement = document.createElement('src');
-		document.getElementById('game-board').setAttribute('src', 'images/back.png');
+    	let cardElement = document.createElement('cardImage');
+		document.getElementById('game-board').setAttribute('cardElement', 'images/back.png');
 		cardElement.setAttribute('data-id', i);
 		cardElement.addEventListener('click', flipCard);
 		document.getElementById('game-board').appendChild(cardElement);
